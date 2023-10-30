@@ -63,11 +63,11 @@ const whiteboard = {
  * Boolean()
  */
 
-let matiiasID = "50624120019";
-console.log(typeof matiiasID);
+let studentID = "50624120019";
+console.log(typeof studentID);
 
-matiiasID = Number(matiiasID);
-console.log(typeof matiiasID);
+studentID = Number(studentID);
+console.log(typeof studentID);
 
 /**
  * Comparisons
