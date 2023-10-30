@@ -20,6 +20,30 @@ console.log(mySecondVariable);
  * Object => { key: "value", key2: "value2"}
  */
 
+/**
+ * HOISTING
+ * Hoisting tähendab tõlkes tõstmine.
+ * Javascript tõstab muutujate deklaratsioone oma skoobi algusesse (koodi teostamise ajal - RUNTIME).
+ */
+
+/**
+ * SCOPES
+ * Tüübid - GLOBAL | LOCAL | BLOCK
+ * Koodibloki tähis on alati {} - kogu kood nende märgiste sees elab koodiblokis ehk BLOCK SCOPE.
+ * GLOBAL skoop on elemendid, mis ei asu ühegi koodibloki sees, vaid on faili rootis.
+ * Skoopimine määrab ära, kuidas meie kood pääseb ligi erinevatele muutujatele ja funktsioonidele.
+ * Skoopimine määrab ära, millises kontekstis on meie muutujad "nähtamatud".
+ * Lahendab probleemi, kus välditakse muutujate soovimatut ülekirjutamist.
+ * NÄIDE: Funktsiooni sees tehtud muutujaid saab kasutada vaid selle funktsiooni sees.
+ */
+
+function thisIsBlockScope() {
+    const blockScopedVariable =
+        "This is created inside block scoped (Function). Logging it out outside of this scope will give us an ReferenceError.";
+}
+// Proovi seda välja logida. Meie keskkond annab meile errori.
+// console.log(blockScopedVariable);
+
 // Objektid - andmestruktuur, mis koosneb võtmetest ja nendega seotud väärtustest. (key-value pairs)
 
 const whiteboard = {
