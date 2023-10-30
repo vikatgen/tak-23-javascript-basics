@@ -57,10 +57,16 @@ const whiteboard = {
 /**
  * TYPE CONVERSIONS
  * Muuda andmetüüp teiseks andmetüübiks
+ * Andmetüüpe saab kontrollida võtmesõnaga typeof
+ * (typeof Something)
  *
  * String()
  * Number()
  * Boolean()
+ * Error()
+ * Math()
+ * Date()
+ * Function()
  */
 
 let studentID = "50624120019";
