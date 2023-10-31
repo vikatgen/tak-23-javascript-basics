@@ -107,4 +107,32 @@ if(conditionalNumber > 5) {
     return;
 }
 
-console.log(conditionalNumber)
+// ES6 viis if-else statementite kirjutamiseks (kasuta seda kui vähegi võimalik).
+const answer = conditionalNumber > 5 ? conditionalNumber++ : conditionalNumber--;
+
+/**
+ * SWITCH STATEMENTS
+ * 
+ */
+
+const studentName = 'Mathias Songisepp';
+
+switch (studentName) {
+    case "Mathias Songisepp":
+        // Mis juhtub juhul kui case on "Mathias Songisepp"
+        complain();
+        break;
+    case "Juhan Pole":
+        // Mis juhtub juhul kui case on "Juhan Pole"
+        cheer();
+        break;
+    case "Kim Ju Han":
+        // Mis juhtub juhul kui case on "Kim Ju Han"
+        kill();
+        break;
+    default: 
+        // Mis juhtub siis kui ükski case väärtustest ei ole õige
+        break;
+}
+
+
