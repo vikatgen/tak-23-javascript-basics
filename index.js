@@ -112,7 +112,8 @@ const answer = conditionalNumber > 5 ? conditionalNumber++ : conditionalNumber--
 
 /**
  * SWITCH STATEMENTS
- * 
+ * Kui parameeter on võrdeline case väärtusega, siis käivitatakse antud case kood.
+ * Break peab olema iga case ja default (case) lõpus.
  */
 
 const studentName = 'Mathias Songisepp';
