@@ -88,3 +88,23 @@ const myRealAge = 55;
 
 console.log(myAge == myRealAge);
 console.log(myAge === myRealAge);
+
+/**
+ * CONDITIONAL STATEMENTS
+ * if / else if / else
+ * 
+ * Annab võimaluse kontrollida olukorda koodis
+ * NÄIDE: Kui number on suurem kui 5, siis liida 1 juurde, kui on väiksem, lahuta 1.
+ */
+
+let conditionalNumber = 10;
+
+if(conditionalNumber > 5) {
+    conditionalNumber++;
+} else if (conditionalNumber < 5) {
+    conditionalNumber--;
+} else {
+    return;
+}
+
+console.log(conditionalNumber)
