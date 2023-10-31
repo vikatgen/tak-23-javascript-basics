@@ -121,11 +121,9 @@ const studentName = 'Mathias Songisepp';
 switch (studentName) {
     case "Mathias Songisepp":
         // Mis juhtub juhul kui case on "Mathias Songisepp"
-        complain();
         break;
     case "Juhan Pole":
         // Mis juhtub juhul kui case on "Juhan Pole"
-        cheer();
         break;
     case "Kim Ju Han":
         // Mis juhtub juhul kui case on "Kim Ju Han"
@@ -135,5 +133,40 @@ switch (studentName) {
         // Mis juhtub siis kui ükski case väärtustest ei ole õige
         break;
 }
+
+/**
+ * Arrays and looping
+ * 
+ * Võib koosneda erinevatest andmetüüpidest.
+ * Array puhul on oluline jätta meelde "indeks".
+ * Indeks on positsioon arrays.
+ * Indeks hakkab alati indeksist 0.
+ * Array pikkuse saab kätte .length
+ * 
+ * Loopimine, kasutame et kordustegevusi lihtsalt teha.
+ * Näide: Soovime muuta kõik õpilaste nimed suurtähtkirjaks.
+ */
+
+const arrayOfStudents = ["Mathias Songissepp", "Juhan Pole", "Kalle Rovanpera", "Ott Tänak"];
+console.log(arrayOfStudents);
+console.log(arrayOfStudents.length)
+
+// Kui soovin kätte saada õpilast, mis on arrays teisel positsioonil.
+console.log("Teine õpilane:", arrayOfStudents[1]);
+
+/**
+ * 1. For loope puhul esimese parameetrina loon uue muutuja väärtusega 0.
+ * 2. Teine parameeter kontrollib kas loodud indeks on väiksem kui kontrollitava array pikkus.
+ * 3. Kolmandaks, kui teine parameeter vastab tõesena, käivitatakse loopi sees olev koodiblokk.
+ * 4. Neljandaks suurendatakse indeksit ühe võrra.
+ * 5. Ring käib otsast peale kuniks indeks on piisavalt suur, et teine parameeter annab vastuseks väär, ning loop lõpetatakse.
+ */
+
+for(let index = 0; index < arrayOfStudents.length; index++) {
+    const editedStudentName = arrayOfStudents[index].toUpperCase();
+    console.log(editedStudentName);
+}
+
+
 
 
