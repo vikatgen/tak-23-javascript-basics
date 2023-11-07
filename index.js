@@ -92,14 +92,14 @@ console.log(myAge === myRealAge);
 /**
  * CONDITIONAL STATEMENTS
  * if / else if / else
- * 
+ *
  * Annab võimaluse kontrollida olukorda koodis
  * NÄIDE: Kui number on suurem kui 5, siis liida 1 juurde, kui on väiksem, lahuta 1.
  */
 
 let conditionalNumber = 10;
 
-if(conditionalNumber > 5) {
+if (conditionalNumber > 5) {
     conditionalNumber++;
 } else if (conditionalNumber < 5) {
     conditionalNumber--;
@@ -108,7 +108,8 @@ if(conditionalNumber > 5) {
 }
 
 // ES6 viis if-else statementite kirjutamiseks (kasuta seda kui vähegi võimalik).
-const answer = conditionalNumber > 5 ? conditionalNumber++ : conditionalNumber--;
+const answer =
+    conditionalNumber > 5 ? conditionalNumber++ : conditionalNumber--;
 
 /**
  * SWITCH STATEMENTS
@@ -116,7 +117,7 @@ const answer = conditionalNumber > 5 ? conditionalNumber++ : conditionalNumber--
  * Break peab olema iga case ja default (case) lõpus.
  */
 
-const studentName = 'Mathias Songisepp';
+const studentName = "Mathias Songisepp";
 
 switch (studentName) {
     case "Mathias Songisepp":
@@ -129,27 +130,32 @@ switch (studentName) {
         // Mis juhtub juhul kui case on "Kim Ju Han"
         kill();
         break;
-    default: 
+    default:
         // Mis juhtub siis kui ükski case väärtustest ei ole õige
         break;
 }
 
 /**
  * Arrays and looping
- * 
+ *
  * Võib koosneda erinevatest andmetüüpidest.
  * Array puhul on oluline jätta meelde "indeks".
  * Indeks on positsioon arrays.
  * Indeks hakkab alati indeksist 0.
  * Array pikkuse saab kätte .length
- * 
+ *
  * Loopimine, kasutame et kordustegevusi lihtsalt teha.
  * Näide: Soovime muuta kõik õpilaste nimed suurtähtkirjaks.
  */
 
-const arrayOfStudents = ["Mathias Songissepp", "Juhan Pole", "Kalle Rovanpera", "Ott Tänak"];
+const arrayOfStudents = [
+    "Mathias Songissepp",
+    "Juhan Pole",
+    "Kalle Rovanpera",
+    "Ott Tänak",
+];
 console.log(arrayOfStudents);
-console.log(arrayOfStudents.length)
+console.log(arrayOfStudents.length);
 
 // Kui soovin kätte saada õpilast, mis on arrays teisel positsioonil.
 console.log("Teine õpilane:", arrayOfStudents[1]);
@@ -162,11 +168,26 @@ console.log("Teine õpilane:", arrayOfStudents[1]);
  * 5. Ring käib otsast peale kuniks indeks on piisavalt suur, et teine parameeter annab vastuseks väär, ning loop lõpetatakse.
  */
 
-for(let index = 0; index < arrayOfStudents.length; index++) {
+// For loop
+for (let index = 0; index < arrayOfStudents.length; index++) {
     const editedStudentName = arrayOfStudents[index].toUpperCase();
-    console.log(editedStudentName);
+    console.log("for loop: ", editedStudentName);
 }
 
+// forEach loop
+arrayOfStudents.forEach((student) => {
+    const editedStudentName = student.toUpperCase();
+    console.log("forEach loop: ", editedStudentName);
+});
 
+// for...in -> kasutame rohkem objektide puhul, array puhul tagastab indeksi.
+for (const student in arrayOfStudents) {
+    const editedStudentName = student.toUpperCase();
+    console.log("For...in loop: ", editedStudentName);
+}
 
-
+// for...of -> Tagastab väärtuse (kas objekt või array)
+for (const student of arrayOfStudents) {
+    const editedStudentName = student.toUpperCase();
+    console.log("For...of loop: ", editedStudentName);
+}
