@@ -191,3 +191,16 @@ for (const student of arrayOfStudents) {
     const editedStudentName = student.toUpperCase();
     console.log("For...of loop: ", editedStudentName);
 }
+
+/**
+ * FUNCTIONS
+ * keyword: function()
+ * Funktsioonidel on parameetrid.
+ * Parameetrid on justkui "placeholderid", mis võtavad enda sisse andmed (ta on muutuja) ning annavad võimaluse sul neid andmeid funktsiooni sees kasutada.
+ */
+
+function square(number) {
+    return number * number;
+}
+
+square(3);
